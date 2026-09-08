@@ -1,0 +1,231 @@
+/* Doctor Profile Page Styles */
+
+.profile-main {
+    padding: 2rem;
+    min-height: calc(100vh - 80px);
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 3rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+body.light-theme .profile-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.light-theme .profile-header {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-avatar-large {
+    flex-shrink: 0;
+}
+
+.doctor-emoji-large {
+    font-size: 6rem;
+    display: block;
+}
+
+.profile-header-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+
+body.light-theme .profile-name {
+    color: #333;
+}
+
+.profile-specialty {
+    font-size: 1.3rem;
+    color: #4facfe;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.stat-item-large {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e0e0e0;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+body.light-theme .stat-item-large {
+    color: #333;
+}
+
+.stat-item-large i.fa-star {
+    color: #ffd700;
+    font-size: 1.3rem;
+}
+
+.stat-item-large i.fa-flag {
+    color: #dc3545;
+    font-size: 1.1rem;
+}
+
+/* Profile Sections */
+.profile-section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+body.light-theme .section-title {
+    color: #333;
+}
+
+.section-content {
+    color: #999;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body.light-theme .section-content {
+    color: #666;
+}
+
+.section-icon {
+    color: #4facfe;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Profile Actions */
+.profile-actions {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.light-theme .profile-actions {
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-book-appointment-large {
+    display: block;
+    width: 100%;
+    padding: 16px 40px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-book-appointment-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .profile-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-main {
+        padding: 1rem;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .doctor-emoji-large {
+        font-size: 4rem;
+    }
+    
+    .profile-name {
+        font-size: 2rem;
+    }
+    
+    .profile-specialty {
+        font-size: 1.1rem;
+    }
+    
+    .profile-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .profile-card {
+        padding: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .section-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    
+    .profile-stats {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .stat-item-large {
+        font-size: 1rem;
+    }
+}
+
